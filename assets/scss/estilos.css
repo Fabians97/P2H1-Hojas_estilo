@@ -71,13 +71,16 @@ body:before {
 .sidebar {
   width: 220px;
   height: 100%;
-  padding: 30px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
   transition-duration: 0.2s;
   overflow-y: auto;
   overflow-x: hidden;
+  padding-bottom: -50px;
 }
 .sidebar .logo {
   display: none;
@@ -1196,4 +1199,30 @@ button.vjs-play-control.vjs-control.vjs-button {
 }
 .video-name a.vide-title-a:hover {
   text-decoration: underline;
+}
+
+#sidebar #socials {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 2rem;
+  text-align: center;
+}
+
+#socials {
+  padding-top: 40px;
+  width: 100%;
+  font-size: 20px;
+  padding-left: 30px;
+}
+
+#socials a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #333;
+}
+
+#socials a:hover {
+  color: rgb(96, 171, 246);
 }/*# sourceMappingURL=estilos.css.map */
