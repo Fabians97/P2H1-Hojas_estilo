@@ -663,6 +663,7 @@ video {
   margin-left: 8px;
   display: inline-block;
 }
+
 .video-content {
   width: 100%;
 }
@@ -1172,9 +1173,12 @@ button.vjs-play-control.vjs-control.vjs-button {
   margin-top: 15px;
 }
 .main-container .container-login-register #login-form form p a, .main-container .container-login-register #register-form form p a {
-  color: blue;
+  color: #808191;
   text-decoration: none;
   cursor: pointer;
+}
+.main-container .container-login-register #login-form form p a:hover, .main-container .container-login-register #register-form form p a:hover {
+  text-decoration: underline;
 }
 
 .main-blog__title a.lin {
