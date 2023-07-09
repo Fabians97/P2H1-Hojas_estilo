@@ -1277,13 +1277,11 @@ $background-color_4: #1f1d2b;
     color: rgb(96, 171, 246);
   }
   
-  .clave_olv{
-    float: right;
-
-    color: #808191 var(--body-color);
-    font-size: 13{px;
-    font-weight: 800;
-    margin-bottom: 15%;
-    
-  }
+.clave_olv{
+  float: right;
+  text-decoration: inherit;
+  color: #808191 var(--body-color);
+  font-size: 13px;
+  margin-bottom: 15%;  
   
+}

@@ -68,7 +68,7 @@
                   <label for="login-password">Contraseña</label>
                   <input type="password" id="login-password" required>
                 </div>
-                <a class="clave_olv" href="">¿Has olvidado tu contraseña?</a>
+                <a class="clave_olv" href="#">¿Has olvidado tu contraseña?</a>
                 <button type="submit">Inicia sesión</button>               
                 <p>¿Aún no tienes una cuenta?
                   <a href="#" onclick="showRegisterForm()">Regístrate</a>
@@ -83,14 +83,20 @@
                   <input type="text" id="register-name" required>
                 </div>
                 <div class="form-group">
-                  <label for="register-email">Correo electrónico</label>
-                  <input type="email" id="register-email" required>
-                </div>
-                <div class="form-group">
                   <label for="register-password">Contraseña</label>
                   <input type="password" id="register-password" required>
                 </div>
-                <button type="submit">Registrarse</button>
+                <div class="form-group">
+                  <label for="register-email">Correo electrónico</label>
+                  <input type="email" id="register-email" required>
+                </div>
+                <div class="terms" style="font-size:14px;">
+                  <input type="checkbox"> Acepto los 
+                  <a style="text-decoration: inherit;"  href="#">Términos de Uso</a> y la 
+                  <a style="text-decoration: inherit;"  href="#">Política de Privacidad</a>
+                  <br>
+                </div>
+                <br><button type="submit">Registrarse</button>
                 <p>¿Ya tienes una cuenta? <a href="#" class="btn-shadow" onclick="showLoginForm()">Inicia sesión</a></p>
               </form>
             </div>

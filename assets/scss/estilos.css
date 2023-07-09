@@ -1229,7 +1229,8 @@ button.vjs-play-control.vjs-control.vjs-button {
 
 .clave_olv {
   float: right;
+  text-decoration: inherit;
   color: #808191 var(--body-color);
-  font-weight: 800;
+  font-size: 13px;
   margin-bottom: 15%;
 }/*# sourceMappingURL=estilos.css.map */
