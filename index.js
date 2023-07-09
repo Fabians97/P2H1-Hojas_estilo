@@ -2,8 +2,8 @@ import express, {json} from "express"
 import cors from 'cors';
 import dotenv from 'dotenv';
 import cookieParser from 'cooke-parser';
-import {dirname, join} from 'path';
-import { fileURLToPath } from "url";
+import {dirname,join} from 'path';
+import {fileURLToPath} from "url";
 import usersRouter from './routes/user-routes.js'
 
 dotenv.config();
@@ -21,5 +21,3 @@ app.use(cookieParser());
 app.use('/', express.static(join(__dirname,'public')));
 app.use('/api/users',usersRouter);
 app.listen(PORT, ()=>console.log(`Server is listening on ${PORT}`));
-
-
