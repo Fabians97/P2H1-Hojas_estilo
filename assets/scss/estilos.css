@@ -1136,7 +1136,7 @@ button.vjs-play-control.vjs-control.vjs-button {
   display: none;
 }
 .main-container .container-login-register #login-form, .main-container .container-login-register #register-form {
-  width: 350px;
+  width: 370px;
   padding: 20px;
   border: 1px solid #352f2f;
   background-color: #353340;
@@ -1228,9 +1228,9 @@ button.vjs-play-control.vjs-control.vjs-button {
 }
 
 .clave_olv {
-  float: right;
+  float: auto;
   text-decoration: inherit;
   color: #808191 var(--body-color);
   font-size: 13px;
-  margin-bottom: 15%;
+  margin-bottom: 5%;
 }/*# sourceMappingURL=estilos.css.map */

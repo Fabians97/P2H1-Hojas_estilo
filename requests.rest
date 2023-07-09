@@ -1,4 +1,4 @@
-POST http://127.0.0.1:5500/
+POST http://127.0.0.1:5000/api/users
 
 Content-Type: application/json
 
@@ -7,3 +7,19 @@ Content-Type: application/json
     "password": "fabian_suquilanda@gmail.com",
     "email": "holamundo"
 }
+
+
+###
+POST http://127.0.0.1:5000/api/auth/login
+
+Content-Type: application/json
+
+{
+    "password": "fabian_suquilanda@gmail.com",
+    "email": "holamundo"
+}
+
+
+
+
+

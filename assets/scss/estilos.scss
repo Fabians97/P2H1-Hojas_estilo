@@ -1166,7 +1166,7 @@ $background-color_4: #1f1d2b;
       }
   
       #login-form, #register-form {
-        width: 350px;
+        width: 370px;
         padding: 20px;
         border: 1px solid #352f2f;
         background-color: #353340;
@@ -1277,11 +1277,10 @@ $background-color_4: #1f1d2b;
     color: rgb(96, 171, 246);
   }
   
-.clave_olv{
-  float: right;
+.clave_olv {
+  float: auto;
   text-decoration: inherit;
   color: #808191 var(--body-color);
   font-size: 13px;
-  margin-bottom: 15%;  
-  
+  margin-bottom: 5%;  
 }
