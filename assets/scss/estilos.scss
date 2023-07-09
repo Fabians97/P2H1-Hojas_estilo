@@ -1094,7 +1094,7 @@ button.vjs-play-control.vjs-control.vjs-button {
 
 
 
-  $color_1: white;
+$color_1: white;
 $color_2: black;
 $background-color_1: #1f1d2b;
 $background-color_2: #f1f1f1;
@@ -1114,12 +1114,12 @@ $background-color_4: #1f1d2b;
 	padding: 16px;
 	font-size: 16px;
 	border: none;
-    z-index: 99;
+  z-index: 99;
 }
 .dropdown {
 	position: relative;
 	display: inline-block;
-    width: 100%;
+  width: 100%;
 	&:hover {
 		.dropdown-content {
 			display: block;
@@ -1134,7 +1134,7 @@ $background-color_4: #1f1d2b;
 	position: absolute;
 	background-color: $background-color_2;
 	min-width: 160px;
-    max-width: 160px;
+  max-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 99;
 	a {
@@ -1142,7 +1142,7 @@ $background-color_4: #1f1d2b;
 		padding: 12px 16px;
 		text-decoration: none;
 		display: block;
-        font-size: 10px;
+    font-size: 10px;
 		&:hover {
 			background-color: $background-color_3;
 		}
@@ -1166,7 +1166,7 @@ $background-color_4: #1f1d2b;
       }
   
       #login-form, #register-form {
-        width: 300px;
+        width: 350px;
         padding: 20px;
         border: 1px solid #352f2f;
         background-color: #353340;
@@ -1277,5 +1277,13 @@ $background-color_4: #1f1d2b;
     color: rgb(96, 171, 246);
   }
   
-  
+  .clave_olv{
+    float: right;
+
+    color: #808191 var(--body-color);
+    font-size: 13{px;
+    font-weight: 800;
+    margin-bottom: 15%;
+    
+  }
   

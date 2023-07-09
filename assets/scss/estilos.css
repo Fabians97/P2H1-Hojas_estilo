@@ -1136,7 +1136,7 @@ button.vjs-play-control.vjs-control.vjs-button {
   display: none;
 }
 .main-container .container-login-register #login-form, .main-container .container-login-register #register-form {
-  width: 300px;
+  width: 350px;
   padding: 20px;
   border: 1px solid #352f2f;
   background-color: #353340;
@@ -1225,4 +1225,11 @@ button.vjs-play-control.vjs-control.vjs-button {
 
 #socials a:hover {
   color: rgb(96, 171, 246);
+}
+
+.clave_olv {
+  float: right;
+  color: #808191 var(--body-color);
+  font-weight: 800;
+  margin-bottom: 15%;
 }/*# sourceMappingURL=estilos.css.map */
