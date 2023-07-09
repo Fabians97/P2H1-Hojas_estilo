@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 import cookieParser from 'cooke-parser';
 import {dirname,join} from 'path';
 import {fileURLToPath} from "url";
-import usersRouter from './routes/user-routes.js'
+import usersRouter from './routes/users-routes.js'
 
 dotenv.config();
 
