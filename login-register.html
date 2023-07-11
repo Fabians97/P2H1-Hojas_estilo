@@ -1,104 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/scss/estilos.css">
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
-    <script src="assets/js/scripts.js"></script>
-    <script src="https://kit.fontawesome.com/f4d16cd6fa.js" crossorigin="anonymous"></script>
-    <title>Profesional News</title>
-</head>
-<body>
-    <div class="container">
-        <div class="sidebar">
-         <span class="logo">S</span>
-         <a class="logo-expand" href="index.html"><img src="assets/img/logo-removebg-preview.png" alt="" style="width: 100%;">
-        </a>        
-        </div>
-        <!--  -->
-        <div class="wrapper">
-         <div class="header">
-          <div class="search-bar">
-           <input type="text" placeholder="Buscar">
-          </div>
-          
-          <div class="user-settings">
-            <div class="dropdown">
-              <li>
-                <a style="text-decoration: none; color: #fff;" href="login-register.html?form=login">Inciar sesión</a>
-                <button class="dropbtn">
-                  <svg id="dropdown-icon" viewBox="0 0 492 492" fill="currentColor">
-                  </svg>
-                </button>
-              </li>            
-              <div class="dropdown-content">
-                <a href="login-register.html?form=login">Cuenta gratuita</a>
-                <a href="#">Cuenta premium</a>
-              </div>              
-            </div>
-          </div>
-         </div>
 
-         <div class="main-container">
-          <!-- <h2 style="margin: 30px; text-align: center;">Bienvenido usuario!</h2> -->
-          <div class="container-login-register">
-            <div id="login-form">
-              <h2>Inicia sesión</h2>
-              <form>
-                <div class="form-group">
-                  <label for="login-email">Correo electrónico</label>
-                  <input type="email" id="login-email" required>
-                </div>
-                <div class="form-group">
-                  <label for="login-password">Contraseña</label>
-                  <input type="password" id="login-password" required>
-                </div>
-                <div class="clave_olv" >
-                  <p>
-                    <font>
-                      ¿Has olvidado tu contraseña?
-                      <a href="#">Haga clic aquí</a>
-                    </font>
-                  </p>      
-                </div>                       
-                <button type="submit">Inicia sesión</button>               
-                <p>¿Aún no tienes una cuenta?
-                  <a href="#" onclick="showRegisterForm()">Regístrate</a>
-                </p>
-              </form>
-            </div>
-            <div id="register-form">
-              <h2>Crear una nueva cuenta</h2>
-              <form>
-                <div class="form-group">
-                  <label for="register-name">Nombre</label>
-                  <input type="text" id="register-name" required>
-                </div>
-                <div class="form-group">
-                  <label for="register-password">Contraseña</label>
-                  <input type="password" id="register-password" required>
-                </div>
-                <div class="form-group">
-                  <label for="register-email">Correo electrónico</label>
-                  <input type="email" id="register-email" required>
-                </div>
-                <div class="terms" style="font-size:14px;">
-                  <input style="margin-top: 1%; text-decoration: inherit;" type="checkbox"> Acepto los 
-                  <a style="text-decoration: none; color: #686eba;" href="#">Términos de Uso</a> y la 
-                  <a style="text-decoration: none; color: #686eba;" href="#">Política de Privacidad</a>
-                  <br>
-                </div>
-                <br><button type="submit">Registrarse</button>
-                <p>¿Ya tienes una cuenta? <a href="#" class="btn-shadow" onclick="showLoginForm()">Inicia sesión</a></p>
-              </form>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/scss/estilosLogin.css">
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <script src="assets/js/scripts.js"></script>
+  <script src="https://kit.fontawesome.com/f4d16cd6fa.js" crossorigin="anonymous"></script>
+  <script src="assets/js/register-login.js"></script>
+  <script src="assets/js/login.js"></script>
+  <title>Profesional News</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="header">
+      <div class="navbar" style="display: flex;">
+
+        <span class="logo"></span>
+        <a class="logo-expand" href="index.html"><img src="assets/img/logo-removebg-preview.png" alt=""
+            style="width: 100%;">
+        </a>
+
+        <div class="search-bar">
+          <input type="text" placeholder="Buscar">
+        </div>
+
+        <div class="user-settings">
+          <div class="dropdown">
+            <li style="list-style-type: none;">
+              <a style="text-decoration: none; color: #fff;" href="login-register.html?form=login">Inciar sesión</a>
+              <button class="dropbtn">
+                <svg id="dropdown-icon" viewBox="0 0 492 492" fill="currentColor">
+                </svg>
+              </button>
+            </li>
+            <div class="dropdown-content">
+              <a href="login-register.html?form=login">Iniciar sesión</a>
             </div>
           </div>
-         </div>       
-        <!--inicio de una caterogia-->       
-        <!--fin de una caterogia-->
         </div>
-          <p style="position: fixed; display: flex;">© 2017 Listen2MyRadio. All Rights Reserved</p>
-       </div>  
+
+      </div>
+
+      <div class="main-container">
+        <div class="container-login-register">
+          <div id="login-form">
+            <h2>Inicia sesión</h2>
+            <form>
+              <div class="form-group">
+                <label for="login-email">Correo electrónico</label>
+                <input type="email" id="login-email" required>
+              </div>
+              <div class="form-group">
+                <label for="login-password">Contraseña</label>
+                <input type="password" id="login-password" required>
+              </div>
+              <div class="clave_olv">
+              </div>
+              <button type="submit">Inicia sesión</button>
+              <p>¿Aún no tienes una cuenta?
+                <a href="#" onclick="showRegisterForm()">Regístrate</a>
+              </p>
+            </form>
+          </div>
+          <div id="register-form">
+            <h2>Crear una nueva cuenta</h2>
+            <form>
+              <div class="form-group">
+                <label for="register-name">Nombre</label>
+                <input type="text" id="register-name" required>
+              </div>
+              <div class="form-group">
+                <label for="register-password">Contraseña</label>
+                <input type="password" id="register-password" required>
+              </div>
+              <div class="form-group">
+                <label for="register-email">Correo electrónico</label>
+                <input type="email" id="register-email" required>
+              </div>
+              <!-- <div class="terms" style="font-size:14px;">
+                <input style="margin-top: 1%; text-decoration: inherit;" type="checkbox"> Acepto los
+                <a style="text-decoration: none; color: #686eba;" href="#">Términos de Uso</a> y la
+                <a style="text-decoration: none; color: #686eba;" href="#">Política de Privacidad</a>
+                <br>
+              </div> -->
+              <br><button type="submit">Registrarse</button>
+              <p>¿Ya tienes una cuenta? <a href="#" class="btn-shadow" onclick="showLoginForm()">Inicia sesión</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>

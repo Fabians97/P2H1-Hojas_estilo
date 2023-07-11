@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+
+* {
+  outline: none;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+}
+
+:root {
+  --body-font: "Inter", sans-serif;
+  --theme-bg: #1f1d2b;
+  --body-color: #808191;
+  --button-bg: #353340;
+  --border-color: rgb(128 129 145 / 24%);
+  --video-bg: #252936;
+  --delay: 0s;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--body-color);
+  background-image: url("../img/asus-rog.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: color-dodge;
+  background-color: rgba(18, 21, 39, 0.86);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em 2em;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(163deg, rgb(31, 29, 43) 21%, rgba(31, 29, 43, 0.3113620448) 64%);
+  opacity: 0.4;
+  content: "";
+}
+
+.container {
+  background-color: var(--theme-bg);
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  color: #fff;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.search-bar {
+  height: 34px;
+  display: flex;
+  width: 100%;
+  max-width: 450px;
+  padding-left: 50px;
+}
+
+.search-bar input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: var(--button-bg);
+  border-radius: 8px;
+  font-family: var(--body-font);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0 40px 0 16px;
+  box-shadow: 0 0 0 2px rgba(134, 140, 160, 0.02);
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56.966 56.966' fill='%23717790c7'%3e%3cpath d='M55.146 51.887L41.588 37.786A22.926 22.926 0 0046.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 00.083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z'/%3e%3c/svg%3e");
+  background-size: 14px;
+  background-repeat: no-repeat;
+  background-position: 96%;
+  color: #fff;
+}
+
+.user-settings {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px 30px;
+  flex-grow: 1;
+  overflow: auto;
+  padding-top: 70px;
+}
+
+.dropbtn {
+  background-color: #1f1d2b;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  z-index: 99;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .search-bar {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .search-bar {
+    max-width: 100%;
+  }
+
+  .user-settings {
+    padding-left: 10px;
+  }
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #1f1d2b;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  max-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 10px;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.main-container h2 {
+  margin: 30px;
+  text-align: center;
+  color: white;
+}
+.main-container .container-login-register {
+  display: flex;
+  justify-content: center;
+}
+.main-container .container-login-register #register-form {
+  display: none;
+}
+.main-container .container-login-register #login-form, .main-container .container-login-register #register-form {
+  width: 370px;
+  padding: 20px;
+  border: 1px solid #352f2f;
+  background-color: #353340;
+  border-radius: 15px;
+}
+.main-container .container-login-register #login-form h2, .main-container .container-login-register #register-form h2 {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+.main-container .container-login-register #login-form form .form-group, .main-container .container-login-register #register-form form .form-group {
+  margin-bottom: 15px;
+}
+.main-container .container-login-register #login-form form .form-group label, .main-container .container-login-register #register-form form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+.main-container .container-login-register #login-form form .form-group input[type=email],
+.main-container .container-login-register #login-form form .form-group input[type=password],
+.main-container .container-login-register #login-form form .form-group input[type=text], .main-container .container-login-register #register-form form .form-group input[type=email],
+.main-container .container-login-register #register-form form .form-group input[type=password],
+.main-container .container-login-register #register-form form .form-group input[type=text] {
+  width: 100%;
+  padding: 5px;
+}
+.main-container .container-login-register #login-form form button[type=submit], .main-container .container-login-register #register-form form button[type=submit] {
+  width: 100%;
+  padding: 10px;
+  background-color: #523d3d;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.main-container .container-login-register #login-form form button[type=submit]:hover, .main-container .container-login-register #register-form form button[type=submit]:hover {
+  background-color: #41569d;
+}
+.main-container .container-login-register #login-form form p, .main-container .container-login-register #register-form form p {
+  margin-top: 15px;
+}
+.main-container .container-login-register #login-form form p a, .main-container .container-login-register #register-form form p a {
+  color: #808191;
+  text-decoration: none;
+  cursor: pointer;
+}
+.main-container .container-login-register #login-form form p a:hover, .main-container .container-login-register #register-form form p a:hover {
+  text-decoration: underline;
+}

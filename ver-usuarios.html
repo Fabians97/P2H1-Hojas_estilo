@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/scss/ver-usuarios.css">
+    <link rel="stylesheet" href="assets/scss/estilosLogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <script src="assets/js/scripts.js"></script>
+    <script src="https://kit.fontawesome.com/f4d16cd6fa.js"
+      crossorigin="anonymous"></script>
+      <script src="assets/js/ver-usuarios.js"></script>
+    <title>Profesional News</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="header">
+        <div class="navbar" style="display: flex;">
+
+          <span class="logo"></span>
+          <a class="logo-expand" href="index.html"><img
+              src="assets/img/logo-removebg-preview.png" alt
+              style="width: 100%;">
+          </a>
+
+          <div class="search-bar">
+            <input type="text" placeholder="Buscar">
+          </div>
+
+          <div class="user-settings">
+          </div>
+
+        </div>
+
+        <div class="main-container">
+          <div style="margin-bottom: 20px;">
+            <a href="nuevo-usuario.html" id="btn-nuevo-usuario" style="text-decoration: none;">Insertar un nuevo usuario</a>
+          </div>
+          <div id="users-table-container">
+            <table id="users-table">
+              <thead>
+                <tr>
+                  <th>id</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Password</th>
+                  <th>Role</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody id="users-table-body">
+                <!-- Los datos de los usuarios se agregarán dinámicamente aquí -->
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

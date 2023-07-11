@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/scss/estilosNuevoUsuario.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/f4d16cd6fa.js"
+      crossorigin="anonymous"></script>
+    <script src="assets/js/nuevo-usuario.js"></script>
+    <title>Profesional News</title>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="header">
+        <div class="navbar" style="display: flex;">
+
+          <span class="logo"></span>
+          <a class="logo-expand" href="index.html"><img
+              src="assets/img/logo-removebg-preview.png" alt
+              style="width: 100%;">
+          </a>
+
+          <div class="search-bar">
+            <input type="text" placeholder="Buscar">
+          </div>
+
+          <div class="user-settings">
+          </div>
+
+        </div>
+
+        <div class="main-container">
+          <div class="container-login-register">
+            <div id="register-form">
+              <h2>Crear una nueva cuenta</h2>
+              <form>
+                <div class="form-group">
+                  <label for="register-name">Nombre</label>
+                  <input type="text" id="register-name" required>
+                </div>
+                <div class="form-group">
+                  <label for="register-password">Contraseña</label>
+                  <input type="password" id="register-password" required>
+                </div>
+                <div class="form-group">
+                  <label for="register-email">Correo electrónico</label>
+                  <input type="email" id="register-email" required>
+                </div>
+                <br><button type="submit">Insertar nuevo usuario</button>
+              </form>
+            </div>
+          </div>
+          <div style="margin-top: 20px;">
+            <a href="ver-usuarios.html" id="btn-nuevo-usuario"
+              style="text-decoration: none;">Regresar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

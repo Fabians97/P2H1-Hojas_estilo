@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/scss/estilosLogin.css">
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <script src="assets/js/editar-usuario.js"></script>
+  <script src="https://kit.fontawesome.com/f4d16cd6fa.js" crossorigin="anonymous"></script>
+  <title>Profesional News</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="header">
+      <div class="navbar" style="display: flex;">
+
+        <span class="logo"></span>
+        <a class="logo-expand" href="index.html"><img src="assets/img/logo-removebg-preview.png" alt=""
+            style="width: 100%;">
+        </a>
+
+        <div class="search-bar">
+          <input type="text" placeholder="Buscar">
+        </div>
+
+        <div class="user-settings">
+        </div>
+
+      </div>
+
+      <div class="main-container">
+        <div class="container-login-register">
+          <div id="login-form">
+            <h2>Ediitar usuario</h2>
+            <form>
+              <div class="form-group">
+                <label for="edit-user">Usuario</label>
+                <input type="text" id="edit-user" required>
+              </div>
+              <div class="form-group">
+                <label for="edit-email">Correo electrónico</label>
+                <input type="email" id="edit-email" required>
+              </div>
+              <div class="form-group">
+                <label for="edit-password">Contraseña</label>
+                <input type="password" id="edit-password" required>
+              </div>
+              <div class="form-group">
+                <label for="edit-role">Rol</label>
+                <select id="edit-role" style="width: 100%; padding: 5px;" required>
+                  <option value="usuario">Usuario</option>
+                  <option value="administrador">Administrador</option>
+                  <option value="invitado">Invitado</option>
+                </select>
+              </div>              
+              <div class="clave_olv">
+              </div>
+              <button type="submit">Editar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

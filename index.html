@@ -1,164 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/scss/estilos.css">
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <script src="assets/js/scripts.js"></script>
-    <script src="https://kit.fontawesome.com/f4d16cd6fa.js" crossorigin="anonymous"></script>
+    <script src="assets/js/verificarToken.js"></script>
+    <script src="https://kit.fontawesome.com/f4d16cd6fa.js"
+      crossorigin="anonymous"></script>
     <title>Profesional News</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="sidebar">
-         <span class="logo">S</span>
-         <a class="logo-expand" href="index.html"><img src="assets/img/logo-removebg-preview.png" alt="" style="width: 100%;"></a>
-         <div class="side-wrapper">
+      <div class="sidebar">
+        <span class="logo">S</span>
+        <a class="logo-expand" href="index.html"><img
+            src="assets/img/logo-removebg-preview.png" alt style="width: 100%;"></a>
+        <div class="side-wrapper">
           <div class="side-title">MENU</div>
           <div class="side-menu">
-           <a class="sidebar-link discover is-active" href="index.html">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-             <path d="M9.135 20.773v-3.057c0-.78.637-1.414 1.423-1.414h2.875c.377 0 .74.15 1.006.414.267.265.417.625.417 1v3.057c-.002.325.126.637.356.867.23.23.544.36.87.36h1.962a3.46 3.46 0 002.443-1 3.41 3.41 0 001.013-2.422V9.867c0-.735-.328-1.431-.895-1.902l-6.671-5.29a3.097 3.097 0 00-3.949.072L3.467 7.965A2.474 2.474 0 002.5 9.867v8.702C2.5 20.464 4.047 22 5.956 22h1.916c.68 0 1.231-.544 1.236-1.218l.027-.009z" />
-            </svg>
-            Principal
-           </a>
-           <a class="sidebar-link trending" href="https://www.businessinsider.es/ultimo">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-11V7l5 5-5 5v-3H8v-4h3z"/>
-              </svg>              
-            Lo último
-           </a>
-           <a class="sidebar-link" href="https://www.businessinsider.es/deportes">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15H8v-2h1.86l-1.24-2.39L7 13.73l2.35-1.01L10 10H8V8h2.12l1.22-2.39L13 6.27 10.68 7.3 12 10h2V8h-1.86l1.24-2.39L17 10.27l-2.35 1.01L14 14h2v2h-2.12l-1.22 2.39L11 17.73l2.32-1.03L14 14h-2v2h1z"/>
-              </svg>                                                                             
-            Deportes
-           </a>
-           <a class="sidebar-link" href="https://www.businessinsider.es/tags/eventos-especiales">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M19.9 5.8c-.8-1-2.1-1.2-3.1-.4l-2.6 1.7-1-1.7L15.2 3H8.8L9.9 5.4l-1 1.7-2.6-1.7c-1-.8-2.3-.6-3.1.4-.8 1-1 2.3-.4 3.3l1.7 2.6-1.7 1-2.4-1.4C.5 12.4 0 13.1 0 14v3c0 .6.4 1 1 1h22c.6 0 1-.4 1-1v-3c0-.9-.5-1.6-1.3-1.9l-2.4 1.4-1.7-2.6c-.6-1-.4-2.3.4-3.3zm-7.2-.7l1.2-2c.3-.5.1-1.2-.4-1.5-.5-.3-1.2-.1-1.5.4l-1.2 2-2.4-1.4 1.2-2c.3-.5.1-1.2-.4-1.5C8 .4 7.3.6 7 .9l-1.2 2L4.4 2l1.2-2c.3-.5.1-1.2-.4-1.5C4 .4 3.3.6 3 .9l-1.2 2L.4 2.6l2 1.2c.5.3.7 1 .4 1.5s-1 .7-1.5.4l-2-1.2L.9 6.2l2 1.2c.5.3.7 1 .4 1.5-.3.5-1 .7-1.5.4l-2-1.2L.9 9.7l1.2 2c.3.5.9.7 1.5.4.5-.3.7-1 .4-1.5l-1.2-2 2-1.2 1.2 2c.3.5.9.7 1.5.4.5-.3.7-1 .4-1.5l-1.2-2L6.3 5.8l1.2 2c.3.5.9.7 1.5.4.5-.3.7-1 .4-1.5l-1.2-2L9.7 2l2 1.2c.5.3.7 1 .4 1.5-.2.2-.5.4-.7.4z"/>
-              </svg>              
-            Especiales
-           </a>
-           <a class="sidebar-link" href="https://www.businessinsider.es/tags/eventos">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M20 2H4C2.9 2 2 2.9 2 4v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 3v2H4V5h16zM4 21v-9h16v9H4zm0-11v2h16v-2H4zm0-3h16v2H4V7z"/>
-              </svg>              
-            Eventos
-           </a>
+            <a class="sidebar-link discover is-active" href="index.html">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M9.135 20.773v-3.057c0-.78.637-1.414 1.423-1.414h2.875c.377 0 .74.15 1.006.414.267.265.417.625.417 1v3.057c-.002.325.126.637.356.867.23.23.544.36.87.36h1.962a3.46 3.46 0 002.443-1 3.41 3.41 0 001.013-2.422V9.867c0-.735-.328-1.431-.895-1.902l-6.671-5.29a3.097 3.097 0 00-3.949.072L3.467 7.965A2.474 2.474 0 002.5 9.867v8.702C2.5 20.464 4.047 22 5.956 22h1.916c.68 0 1.231-.544 1.236-1.218l.027-.009z" />
+              </svg>
+              Principal
+            </a>
+            <a class="sidebar-link trending"
+              href="https://www.businessinsider.es/ultimo">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                fill="currentColor">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-11V7l5 5-5 5v-3H8v-4h3z" />
+              </svg>
+              Lo último
+            </a>
+            <a class="sidebar-link"
+              href="https://www.businessinsider.es/deportes">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                fill="currentColor">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15H8v-2h1.86l-1.24-2.39L7 13.73l2.35-1.01L10 10H8V8h2.12l1.22-2.39L13 6.27 10.68 7.3 12 10h2V8h-1.86l1.24-2.39L17 10.27l-2.35 1.01L14 14h2v2h-2.12l-1.22 2.39L11 17.73l2.32-1.03L14 14h-2v2h1z" />
+              </svg>
+              Deportes
+            </a>
+            <a class="sidebar-link"
+              href="https://www.businessinsider.es/tags/eventos-especiales">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                fill="currentColor">
+                <path
+                  d="M19.9 5.8c-.8-1-2.1-1.2-3.1-.4l-2.6 1.7-1-1.7L15.2 3H8.8L9.9 5.4l-1 1.7-2.6-1.7c-1-.8-2.3-.6-3.1.4-.8 1-1 2.3-.4 3.3l1.7 2.6-1.7 1-2.4-1.4C.5 12.4 0 13.1 0 14v3c0 .6.4 1 1 1h22c.6 0 1-.4 1-1v-3c0-.9-.5-1.6-1.3-1.9l-2.4 1.4-1.7-2.6c-.6-1-.4-2.3.4-3.3zm-7.2-.7l1.2-2c.3-.5.1-1.2-.4-1.5-.5-.3-1.2-.1-1.5.4l-1.2 2-2.4-1.4 1.2-2c.3-.5.1-1.2-.4-1.5C8 .4 7.3.6 7 .9l-1.2 2L4.4 2l1.2-2c.3-.5.1-1.2-.4-1.5C4 .4 3.3.6 3 .9l-1.2 2L.4 2.6l2 1.2c.5.3.7 1 .4 1.5s-1 .7-1.5.4l-2-1.2L.9 6.2l2 1.2c.5.3.7 1 .4 1.5-.3.5-1 .7-1.5.4l-2-1.2L.9 9.7l1.2 2c.3.5.9.7 1.5.4.5-.3.7-1 .4-1.5l-1.2-2 2-1.2 1.2 2c.3.5.9.7 1.5.4.5-.3.7-1 .4-1.5l-1.2-2L6.3 5.8l1.2 2c.3.5.9.7 1.5.4.5-.3.7-1 .4-1.5l-1.2-2L9.7 2l2 1.2c.5.3.7 1 .4 1.5-.2.2-.5.4-.7.4z" />
+              </svg>
+              Especiales
+            </a>
+            <a class="sidebar-link"
+              href="https://www.businessinsider.es/tags/eventos">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                fill="currentColor">
+                <path
+                  d="M20 2H4C2.9 2 2 2.9 2 4v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 3v2H4V5h16zM4 21v-9h16v9H4zm0-11v2h16v-2H4zm0-3h16v2H4V7z" />
+              </svg>
+              Eventos
+            </a>
           </div>
-         </div>
-         <div class="side-wrapper">
+        </div>
+        <div class="side-wrapper">
           <div class="side-title">CATEGORIAS</div>
           <div class="side-menu">
-           <a class="sidebar-link" href="#economia">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <a class="sidebar-link" href="#economia">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                fill="currentColor">
                 <rect x="4" y="18" width="4" height="6" rx="1" />
                 <rect x="10" y="14" width="4" height="10" rx="1" />
                 <rect x="16" y="10" width="4" height="14" rx="1" />
                 <rect x="22" y="6" width="4" height="18" rx="1" />
               </svg>
-            Economía
-           </a>
-           <a class="sidebar-link" href="#politica">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2C6.48 2 2 6.48 2 12v3h1v5h16v-5h1v-3c0-5.52-4.48-10-10-10zm0 2c4.41 0 8 3.59 8 8v3H4v-3c0-4.41 3.59-8 8-8zm-3 4.5h2V11h-2zm0 3h2v6h-2z"/>
-              </svg>                            
-            Política
-           </a>
-           <a class="sidebar-link" href="#tecnologia">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M21 3H3C1.9 3 1 3.9 1 5V18c0 1.1.9 2 2 2h4v1H6v1h12v-1h-1v-1h4c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM4 17V6h16v11H4z"/>
-              </svg>                                                    
-            Tecnología
-           </a>
-           <a class="sidebar-link" href="#estrategia">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-             <path fill-rule="evenodd" clip-rule="evenodd" d="M16.158 8.233a4.207 4.207 0 01-4.209 4.234 4.207 4.207 0 01-4.21-4.234A4.206 4.206 0 0111.95 4a4.206 4.206 0 014.21 4.233zM11.95 20c-3.431 0-6.36-.544-6.36-2.72 0-2.177 2.91-2.74 6.36-2.74 3.431 0 6.361.544 6.361 2.72S15.399 20 11.949 20zm6.008-11.69a5.765 5.765 0 01-.984 3.24.158.158 0 00.107.245 3.4 3.4 0 00.483.046c1.643.044 3.118-1.02 3.525-2.621.604-2.379-1.168-4.514-3.425-4.514-.245 0-.48.026-.708.073-.031.007-.064.021-.082.05-.022.034-.006.08.016.11a5.807 5.807 0 011.068 3.37zm2.721 5.203c1.104.217 1.83.66 2.131 1.304a1.923 1.923 0 010 1.67c-.46.998-1.944 1.319-2.52 1.402-.12.018-.215-.086-.203-.206.295-2.767-2.048-4.08-2.654-4.381-.026-.014-.032-.034-.03-.047.003-.009.013-.023.033-.026 1.312-.024 2.722.156 3.243.284zM6.438 11.84c.164-.004.325-.019.483-.046a.158.158 0 00.106-.245 5.765 5.765 0 01-.984-3.24c0-1.25.39-2.416 1.068-3.372.022-.03.037-.075.016-.11-.017-.027-.051-.042-.082-.05a3.52 3.52 0 00-.71-.072c-2.255 0-4.027 2.135-3.423 4.514.407 1.6 1.882 2.664 3.525 2.621zm.159 1.414c.003.013-.003.033-.028.047-.607.302-2.95 1.614-2.656 4.38.013.121-.082.224-.201.207-.577-.083-2.06-.404-2.52-1.402a1.917 1.917 0 010-1.67c.3-.644 1.026-1.087 2.13-1.305.522-.127 1.93-.307 3.244-.283.02.003.03.017.03.026z" />
-            </svg>        
-            Estrategia
-           </a>
+              Economía
+            </a>
+            <a class="sidebar-link" href="#politica">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                fill="currentColor">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12v3h1v5h16v-5h1v-3c0-5.52-4.48-10-10-10zm0 2c4.41 0 8 3.59 8 8v3H4v-3c0-4.41 3.59-8 8-8zm-3 4.5h2V11h-2zm0 3h2v6h-2z" />
+              </svg>
+              Política
+            </a>
+            <a class="sidebar-link" href="#tecnologia">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                fill="currentColor">
+                <path
+                  d="M21 3H3C1.9 3 1 3.9 1 5V18c0 1.1.9 2 2 2h4v1H6v1h12v-1h-1v-1h4c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM4 17V6h16v11H4z" />
+              </svg>
+              Tecnología
+            </a>
+            <a class="sidebar-link" href="#estrategia">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M16.158 8.233a4.207 4.207 0 01-4.209 4.234 4.207 4.207 0 01-4.21-4.234A4.206 4.206 0 0111.95 4a4.206 4.206 0 014.21 4.233zM11.95 20c-3.431 0-6.36-.544-6.36-2.72 0-2.177 2.91-2.74 6.36-2.74 3.431 0 6.361.544 6.361 2.72S15.399 20 11.949 20zm6.008-11.69a5.765 5.765 0 01-.984 3.24.158.158 0 00.107.245 3.4 3.4 0 00.483.046c1.643.044 3.118-1.02 3.525-2.621.604-2.379-1.168-4.514-3.425-4.514-.245 0-.48.026-.708.073-.031.007-.064.021-.082.05-.022.034-.006.08.016.11a5.807 5.807 0 011.068 3.37zm2.721 5.203c1.104.217 1.83.66 2.131 1.304a1.923 1.923 0 010 1.67c-.46.998-1.944 1.319-2.52 1.402-.12.018-.215-.086-.203-.206.295-2.767-2.048-4.08-2.654-4.381-.026-.014-.032-.034-.03-.047.003-.009.013-.023.033-.026 1.312-.024 2.722.156 3.243.284zM6.438 11.84c.164-.004.325-.019.483-.046a.158.158 0 00.106-.245 5.765 5.765 0 01-.984-3.24c0-1.25.39-2.416 1.068-3.372.022-.03.037-.075.016-.11-.017-.027-.051-.042-.082-.05a3.52 3.52 0 00-.71-.072c-2.255 0-4.027 2.135-3.423 4.514.407 1.6 1.882 2.664 3.525 2.621zm.159 1.414c.003.013-.003.033-.028.047-.607.302-2.95 1.614-2.656 4.38.013.121-.082.224-.201.207-.577-.083-2.06-.404-2.52-1.402a1.917 1.917 0 010-1.67c.3-.644 1.026-1.087 2.13-1.305.522-.127 1.93-.307 3.244-.283.02.003.03.017.03.026z" />
+              </svg>
+              Estrategia
+            </a>
           </div>
           <div id="socials">
             <a href="https://twitter.com/BIEspana" target="_blank">
               <i class="fa-brands fa-twitter"></i>
             </a>
-            <a href="https://www.facebook.com/BusinessInsiderEspana" target="_blank">
+            <a href="https://www.facebook.com/BusinessInsiderEspana"
+              target="_blank">
               <i class="fa-brands fa-facebook"></i>
             </a>
             <a href="https://www.tiktok.com/@businessinsideres" target="_blank">
               <i class="fa-brands fa-tiktok"></i>
             </a>
           </div>
-         </div>
         </div>
-        <div class="wrapper">
-         <div class="header">
+      </div>
+      <div class="wrapper">
+        <div class="header">
           <div class="search-bar">
-           <input type="text" placeholder="Buscar">
+            <input type="text" placeholder="Buscar">
           </div>
-          
-          <div class="user-settings">
-            <!-- <img class="user-img" src="assets/img/perfil.jpg" alt=""> -->
-            <div class="user-name"> 
-            </div class="dropdown">
-            <div class="dropdown">
-              <li>
-                <a style="text-decoration: none; color: #fff;" href="login-register.html?form=login">Inciar sesión</a>
-                <button class="dropbtn">
-                  <svg id="dropdown-icon" viewBox="0 0 492 492" fill="currentColor">
-                  </svg>
-                </button>
-              </li>            
-              <div class="dropdown-content">
-                <a href="login-register.html?form=login">Cuenta gratuita</a>
-                <a href="#">Cuenta premium</a>
-              </div>              
-            </div>
-          </div>
-          
 
-         </div>
-         <div class="main-container">
-            <div class="main-header anim" style="--delay: 0s" id="portada">En portada</div>
+          <div class="user-settings">
+            <div class="user-name">
+              </div class="dropdown">
+              <div class="dropdown">
+                <li style="list-style-type: none;">
+                  <a style="text-decoration: none; color: #fff;"
+                    href="login-register.html?form=login" id="text-init">Inciar sesión</a>
+                  <a style="text-decoration: none; color: #fff;" href id="text-account">Mi cuenta</a>
+                  <button class="dropbtn">
+                    <svg id="dropdown-icon" viewBox="0 0 492 492"
+                      fill="currentColor">
+                    </svg>
+                  </button>
+                </li>
+                <div class="dropdown-content">
+                  <a href="login-register.html?form=login" id="login-a">Iniciar
+                    sesión</a>
+                  <a href id="cerrar-a">Cerrar sesión</a>
+                  <a href="ver-usuarios.html" id="ver-users-a">Panel Usuarios</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="main-container">
+            <div class="main-header anim" style="--delay: 0s" id="portada">En
+              portada</div>
             <!--  -->
             <div class="main-blogs">
               <div class="main-blog anim" style="--delay: .1s">
                 <div class="main-blog__content" style="display: flex;">
                   <figure class="main-blog__image" style="margin: 10px;">
-                    <a href="https://www.businessinsider.es/marcando-netflix-camino-plataformas-1265160">
-                      <img src="../assets/img/nlj7fkpa.png" style="width: 100; min-height: 100%;">
-                    </a>                   
+                    <a
+                      href="https://www.businessinsider.es/marcando-netflix-camino-plataformas-1265160">
+                      <img src="./assets/img/netflix.png"
+                        style="width: 100; min-height: 100%;">
+                    </a>
                   </figure>
                   <div class="main-blog__text;">
-                    <h3 class="main-blog__title" style="font-weight: bold; margin-top: 10px; max-width: 800px; margin-left: 25px;">
-                      <a class="lin" href="https://www.businessinsider.es/marcando-netflix-camino-plataformas-1265160" style="cursor: pointer;">
-                        Más plataformas se podrían plantear limitar el uso compartido de cuentas (y sí, Netflix tiene la culpa)
+                    <h3 class="main-blog__title"
+                      style="font-weight: bold; margin-top: 10px; max-width: 800px; margin-left: 25px;">
+                      <a class="lin"
+                        href="https://www.businessinsider.es/marcando-netflix-camino-plataformas-1265160"
+                        style="cursor: pointer;">
+                        Más plataformas se podrían plantear limitar el uso
+                        compartido de cuentas (y sí, Netflix tiene la culpa)
                       </a>
                     </h3>
                     <div class="main-blog__author">
                       <div class="author-detail">
                         <div class="author-name" style="max-width: 130ch">
-                          <ul style= "margin-top: -20px;">   
-                          <a href="https://www.businessinsider.es/marcando-netflix-camino-plataformas-1265160">                                            
-                              <li style="margin-left: -15px; margin-bottom: 1rem;"; type="square">
-                                <a href="https://www.businessinsider.es/marcando-netflix-camino-plataformas-1265160" style="cursor: pointer; text-decoration: none; color: inherit;">
-                                  Los primeros datos indican que a Netflix puede salirle bien la jugada de prohibir las cuentas compartidas a sus usuarios.
+                          <ul style="margin-top: -20px;">
+                            <a
+                              href="https://www.businessinsider.es/marcando-netflix-camino-plataformas-1265160">
+                              <li
+                                style="margin-left: -15px; margin-bottom: 1rem;"
+                                ; type="square">
+                                <a
+                                  href="https://www.businessinsider.es/marcando-netflix-camino-plataformas-1265160"
+                                  style="cursor: pointer; text-decoration: none; color: inherit;">
+                                  Los primeros datos indican que a Netflix puede
+                                  salirle bien la jugada de prohibir las cuentas
+                                  compartidas a sus usuarios.
                                 </a>
-                                </li>
-                              <li style="margin-left: -15px; text-decoration: none; color: inherit;"; type="square">
-                                <a href="https://www.businessinsider.es/marcando-netflix-camino-plataformas-1265160" style="cursor: pointer; text-decoration: none; color: inherit;">
-                                  Como resultado, grandes competidoras como HBO Max y Disney + podrían plantearse en un futuro cercano seguir sus pasos mientras el resto de plataformas esperan acontecimientos.
+                              </li>
+                              <li
+                                style="margin-left: -15px; text-decoration: none; color: inherit;"
+                                ; type="square">
+                                <a
+                                  href="https://www.businessinsider.es/marcando-netflix-camino-plataformas-1265160"
+                                  style="cursor: pointer; text-decoration: none; color: inherit;">
+                                  Como resultado, grandes competidoras como HBO
+                                  Max y Disney + podrían plantearse en un futuro
+                                  cercano seguir sus pasos mientras el resto de
+                                  plataformas esperan acontecimientos.
                                 </a>
-                                </li>                          
-                          </a>
-                        </ul>
+                              </li>
+                            </a>
+                          </ul>
                         </div>
                       </div>
                     </div>
-                    <div class="main-blog__time" style="margin-bottom: 20px; margin-right: 18px;">
-                      <a href="https://www.businessinsider.es/marcando-netflix-camino-plataformas-1265160" style="cursor: pointer; text-decoration: none; color: inherit;">
+                    <div class="main-blog__time"
+                      style="margin-bottom: 20px; margin-right: 18px;">
+                      <a
+                        href="https://www.businessinsider.es/marcando-netflix-camino-plataformas-1265160"
+                        style="cursor: pointer; text-decoration: none; color: inherit;">
                         LEER MÁS
                       </a>
                     </div>
@@ -167,298 +217,368 @@
               </div>
             </div>
             <!--  -->
-          <div class="small-header anim" style="--delay: .3s" id="economia">Economía</div>
-          <div class="videos">
-           <div class="video anim" style="--delay: .4s">
-            <div class="video-time">16 min</div>
-            <div class="video-wrapper">        
-              <a href="https://www.youtube.com/watch?v=47Xx_4Qohqs&t=5s">
-                <video muted="">  
-                <source src="assets/img/video chino2.mp4" type="video/mp4">
-              </video>
-              </a>
-            </div>
-            <div class="video-by">Linette Lopez, Business Insider</div>
-            <div class="video-name">
-              <a href="https://www.businessinsider.es/economia-china-mucho-peor-esperaba-1262584" style="color: inherit;" class="vide-title-a">
-                La economía de China está mucho peor de lo que se esperaba
-              </a>
-            </div>           
-            <div class="video-view">2K vistas<span class="seperate video-seperate"></span>hace 1 día</div>
-           </div>
-           <div class="video anim" style="--delay: .5s">
-            <div class="video-time">1 min</div>
-            <div class="video-wrapper">
-              <a href="https://www.youtube.com/watch?v=geHOPGnMTNc&t=1s">
-                <video muted="">
-                  <source src="assets/img/economia.mp4" type="video/mp4">
-                 </video>
-              </a>  
-            </div>
-            <div class="video-by offline">Inma Benedito</div>
-            <div class="video-name">
-              <a class="vide-title-a" href="https://www.businessinsider.es/economia-espanola-sorprende-crece-06-primer-trimestre-1264866" style="color: inherit;">
-                La economía española sorprende con un crecimiento del 0,6% en el primer trimestre y recupera por primera vez el PIB prepandemia
-              </a>
-            </div>
-            <div class="video-view" style="margin-top: 18px;">1K vistas<span class="seperate video-seperate"></span>hace 2 días</div>
-           </div>
-           <div class="video anim" style="--delay: .6s">
-            <div class="video-time">1 min</div>
-            <div class="video-wrapper">
-              <a href="https://cdn.jwplayer.com/previews/PVZrnPhO">
-                <video muted="">
-                  <source src="assets/img/pensiones.mp4" type="video/mp4">
-                 </video>
-              </a>       
-            </div>
-            <div class="video-by offline">Enrique Fernández</div>
-            <div class="video-name">
-              <a class="vide-title-a" href="https://www.businessinsider.es/cuando-cobran-pensiones-junio-2023-1258266" style="color: inherit;">
-                ¿Cuándo se cobran las pensiones en junio de 2023? Esta es la fecha del ingreso de cada banco
-              </a>
+            <div class="small-header anim" style="--delay: .3s" id="economia">Economía</div>
+            <div class="videos">
+              <div class="video anim" style="--delay: .4s">
+                <div class="video-time">16 min</div>
+                <div class="video-wrapper">
+                  <a href="https://www.youtube.com/watch?v=47Xx_4Qohqs&t=5s">
+                    <video muted>
+                      <source src="assets/img/video chino2.mp4" type="video/mp4">
+                    </video>
+                  </a>
+                </div>
+                <div class="video-by">Linette Lopez, Business Insider</div>
+                <div class="video-name">
+                  <a
+                    href="https://www.businessinsider.es/economia-china-mucho-peor-esperaba-1262584"
+                    style="color: inherit;" class="vide-title-a">
+                    La economía de China está mucho peor de lo que se esperaba
+                  </a>
+                </div>
+                <div class="video-view">2K vistas<span
+                    class="seperate video-seperate"></span>hace 1 día</div>
               </div>
-            <div class="video-view" style="margin-top: 18px;">4K vistas<span class="seperate video-seperate"></span>hace 2 días</div>
-           </div>
-           <div class="video anim" style="--delay: .7s">
-            <div class="video-time">1 min</div>
-            <div class="video-wrapper">
-              <a href="https://www.youtube.com/watch?v=z5d2sS8b1wQ">
-                <video muted="">
-                  <source src="assets/img/mutimillo.mp4" type="video/mp4">
-                 </video>
-              </a>           
-            </div>
-            <div class="video-by">Hasan Chowdhury, Business Insider</div>
-            <div class="video-name">
-              <a class="vide-title-a" href="https://www.businessinsider.es/ceo-softbank-asegura-no-usar-chatgpt-1264550" style="color: inherit;">
-                El multimillonario CEO de SoftBank cree que la IA transformará la vida de los humanos en 30 años, y reconoce que no para de usar ChatGPT
-              </a>
+              <div class="video anim" style="--delay: .5s">
+                <div class="video-time">1 min</div>
+                <div class="video-wrapper">
+                  <a href="https://www.youtube.com/watch?v=geHOPGnMTNc&t=1s">
+                    <video muted>
+                      <source src="assets/img/economia.mp4" type="video/mp4">
+                    </video>
+                  </a>
+                </div>
+                <div class="video-by offline">Inma Benedito</div>
+                <div class="video-name">
+                  <a class="vide-title-a"
+                    href="https://www.businessinsider.es/economia-espanola-sorprende-crece-06-primer-trimestre-1264866"
+                    style="color: inherit;">
+                    La economía española sorprende con un crecimiento del 0,6%
+                    en el primer trimestre y recupera por primera vez el PIB
+                    prepandemia
+                  </a>
+                </div>
+                <div class="video-view" style="margin-top: 18px;">1K vistas<span
+                    class="seperate video-seperate"></span>hace 2 días</div>
               </div>
-            <div class="video-view">3K vistas<span class="seperate video-seperate"></span>hace 1 día</div>
-           </div>
+              <div class="video anim" style="--delay: .6s">
+                <div class="video-time">1 min</div>
+                <div class="video-wrapper">
+                  <a href="https://cdn.jwplayer.com/previews/PVZrnPhO">
+                    <video muted>
+                      <source src="assets/img/pensiones.mp4" type="video/mp4">
+                    </video>
+                  </a>
+                </div>
+                <div class="video-by offline">Enrique Fernández</div>
+                <div class="video-name">
+                  <a class="vide-title-a"
+                    href="https://www.businessinsider.es/cuando-cobran-pensiones-junio-2023-1258266"
+                    style="color: inherit;">
+                    ¿Cuándo se cobran las pensiones en junio de 2023? Esta es la
+                    fecha del ingreso de cada banco
+                  </a>
+                </div>
+                <div class="video-view" style="margin-top: 18px;">4K vistas<span
+                    class="seperate video-seperate"></span>hace 2 días</div>
+              </div>
+              <div class="video anim" style="--delay: .7s">
+                <div class="video-time">1 min</div>
+                <div class="video-wrapper">
+                  <a href="https://www.youtube.com/watch?v=z5d2sS8b1wQ">
+                    <video muted>
+                      <source src="assets/img/mutimillo.mp4" type="video/mp4">
+                    </video>
+                  </a>
+                </div>
+                <div class="video-by">Hasan Chowdhury, Business Insider</div>
+                <div class="video-name">
+                  <a class="vide-title-a"
+                    href="https://www.businessinsider.es/ceo-softbank-asegura-no-usar-chatgpt-1264550"
+                    style="color: inherit;">
+                    El multimillonario CEO de SoftBank cree que la IA
+                    transformará la vida de los humanos en 30 años, y reconoce
+                    que no para de usar ChatGPT
+                  </a>
+                </div>
+                <div class="video-view">3K vistas<span
+                    class="seperate video-seperate"></span>hace 1 día</div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="small-header anim" style="--delay: .3s" id="politica">Política</div>
+            <div class="videos">
+              <div class="video anim" style="--delay: .4s">
+                <div class="video-time">21 min</div>
+                <div class="video-wrapper">
+                  <a href="https://www.youtube.com/watch?v=RuvUuJP-zO8">
+                    <video muted>
+                      <source src="assets/img/guerra IA.mp4" type="video/mp4">
+                    </video>
+                  </a>
+                </div>
+                <div class="video-by">Alberto R. Aguiar</div>
+                <div class="video-name">
+                  <a class="vide-title-a"
+                    href="https://www.businessinsider.es/como-ia-generativa-sera-campo-batalla-eeuu-china-1265174"
+                    style="color: inherit;">
+                    Cómo la IA generativa será otro campo de batalla entre EEUU
+                    y China:
+                    "No nos interesa ofrecerles tecnología que puedan usar en nuestra contra"
+                  </a>
+                </div>
+                <div class="video-view" style="margin-top: 18px;">3K vistas<span
+                    class="seperate video-seperate"></span>hace 1 día</div>
+              </div>
+              <div class="video anim" style="--delay: .5s">
+                <div class="video-time">1 min</div>
+                <div class="video-wrapper">
+                  <a href="https://www.youtube.com/watch?v=IxEDSxsRRFw">
+                    <video muted>
+                      <source src="assets/img/elecciones.mp4" type="video/mp4">
+                    </video>
+                  </a>
+                </div>
+                <div class="video-by offline">Miriam Pérez</div>
+                <div class="video-name">
+                  <a class="vide-title-a"
+                    href="https://www.businessinsider.es/elecciones-23j-politicos-retirando-primera-linea-1260400"
+                    style="color: inherit;">
+                    El adelanto electoral del 23J se ha cobrado varios
+                    protagonistas: las caras más visibles que dejan la primera
+                    línea política
+                  </a>
+                </div>
+                <div class="video-view" style="margin-top: 18px;">1K vistas<span
+                    class="seperate video-seperate"></span>hace 23 horas</div>
+              </div>
+              <div class="video anim" style="--delay: .6s">
+                <div class="video-time">1 min</div>
+                <div class="video-wrapper">
+                  <a href="https://www.youtube.com/watch?v=iCDU4RTVe9M">
+                    <video muted>
+                      <source src="assets/img/votos.mp4" type="video/mp4">
+                    </video>
+                  </a>
+                </div>
+                <div class="video-by offline">Victoria Bustamante</div>
+                <div class="video-name">
+                  <a class="vide-title-a"
+                    href="https://www.businessinsider.es/pides-voto-correo-no-usas-no-podras-votar-presencial-1257620"
+                    style="color: inherit;">
+                    ¿Puedes votar presencialmente si pides el voto por correo,
+                    pero no lo ejerces?
+                  </a>
+                </div>
+                <div class="video-view" style="margin-top: 18px;">1K vistas<span
+                    class="seperate video-seperate"></span>hace 1 día</div>
+              </div>
+              <div class="video anim" style="--delay: .7s">
+                <div class="video-time">42 min</div>
+                <div class="video-wrapper">
+                  <a href="https://www.youtube.com/watch?v=8lhab68BiP8">
+                    <video muted>
+                      <source src="assets/img/formula.mp4" type="video/mp4">
+                    </video>
+                  </a>
+                </div>
+                <div class="video-by">Miriam Pérez</div>
+                <div class="video-name">
+                  <a class="vide-title-a"
+                    href="https://www.businessinsider.es/plan-partido-espana-vaciada-conquistar-teletrabajo-1252706"
+                    style="color: inherit;">
+                    La fórmula para revertir la despoblación se llama
+                    teletrabajo, pero hay desafíos: este es el plan del partido
+                    España Vaciada para conseguirlo
+                  </a>
+                </div>
+                <div class="video-view" style="margin-top: 18px;">2K vistas<span
+                    class="seperate video-seperate"></span>hace 3 días</div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="small-header anim" style="--delay: .3s" id="tecnologia">Tecnología</div>
+            <div class="videos">
+              <div class="video anim" style="--delay: .4s">
+                <div class="video-time">44 min</div>
+                <div class="video-wrapper">
+                  <a href="https://www.youtube.com/watch?v=N5DF9PsZFa4">
+                    <video muted>
+                      <source src="assets/img/ntf.mp4" type="video/mp4">
+                    </video>
+                  </a>
+                </div>
+                <div class="video-by">Óscar F. Civieta</div>
+                <div class="video-name">
+                  <a class="vide-title-a"
+                    href="https://www.businessinsider.es/cual-nft-caro-historia-1261760"
+                    style="color: inherit;">
+                    ¿Cuál es el NFT más caro de la historia?
+                  </a>
+                </div>
+                <div class="video-view" style="margin-top: 35px;">3K vistas<span
+                    class="seperate video-seperate"></span>hace 23 horas</div>
+              </div>
+              <div class="video anim" style="--delay: .5s">
+                <div class="video-time">4 min</div>
+                <div class="video-wrapper">
+                  <a href="https://www.youtube.com/watch?v=e5W_2jolU5k">
+                    <video muted>
+                      <source src="assets/img/titan.mp4" type="video/mp4">
+                    </video>
+                  </a>
+                </div>
+                <div class="video-by offline">Marianne Guenot, Insider</div>
+                <div class="video-name">
+                  <a class="vide-title-a"
+                    href="https://www.businessinsider.es/5-errores-cometieron-submarino-titan-1265418"
+                    style="color: inherit;">
+                    Hubo 5 errores clave antes de la implosión del submarino
+                    Titanic y la mayoría podrían haberse evitado fácilmente
+                  </a>
+                </div>
+                <div class="video-view" style="margin-top: 35px;">1K vistas<span
+                    class="seperate video-seperate"></span>hace 12 horas</div>
+              </div>
+              <div class="video anim" style="--delay: .6s">
+                <div class="video-time">9 min</div>
+                <div class="video-wrapper">
+                  <a href="https://www.youtube.com/watch?v=G6cXuKVOyS8">
+                    <video muted>
+                      <source src="assets/img/ganar dinero.mp4" type="video/mp4">
+                    </video>
+                  </a>
+                </div>
+                <div class="video-by offline">Manuel Naranjo</div>
+                <div class="video-name">
+                  <a class="vide-title-a"
+                    href="https://www.businessinsider.es/como-usar-inteligencia-artificial-ganar-dinero-youtube-1262014"
+                    style="color: inherit;">
+                    7 formas de aprovechar el poder de la IA para ganar dinero
+                    en YouTube
+                  </a>
+                </div>
+                <div class="video-view" style="margin-top: 35px;">2K vistas<span
+                    class="seperate video-seperate"></span>hace 1 día</div>
+              </div>
+              <div class="video anim" style="--delay: .7s">
+                <div class="video-time">12 min</div>
+                <div class="video-wrapper">
+                  <a href="https://www.youtube.com/watch?v=LdLGUdXlMCo">
+                    <video muted>
+                      <source src="assets/img/activision.mp4" type="video/mp4">
+                    </video>
+                  </a>
+                </div>
+                <div class="video-by">Carlos Ferrer-Bonsoms Cruz</div>
+                <div class="video-name">
+                  <a class="vide-title-a"
+                    href="https://www.businessinsider.es/microsoft-planteo-adquirir-zynga-antes-comprar-activision-1265426"
+                    style="color: inherit;">
+                    Microsoft se planteó adquirir Zynga antes de comprar
+                    Activision Blizzard
+                  </a>
+                </div>
+                <div class="video-view" style="margin-top: 18px;">4K vistas<span
+                    class="seperate video-seperate"></span>hace 1 día</div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="small-header anim" style="--delay: .3s" id="estrategia">Estrategia</div>
+            <div class="videos">
+              <div class="video anim" style="--delay: .4s">
+                <div class="video-time">10 min</div>
+                <div class="video-wrapper">
+                  <a href="https://www.youtube.com/watch?v=_5h7Y2ZjLFQ">
+                    <video muted>
+                      <source src="assets/img/Zvsmillenials.mp4"
+                        type="video/mp4">
+                    </video>
+                  </a>
+                </div>
+                <div class="video-by">Sawdah Bhaimiya, Business Insider</div>
+                <div class="video-name">
+                  <a class="vide-title-a"
+                    href="https://www.businessinsider.es/zetas-millennials-sienten-excluidos-jerga-laboral-1260374"
+                    style="color: inherit;">
+                    La generación Z y los 'millennials' se sienten confundidos,
+                    irritados y excluidos por la interminable jerga laboral de
+                    la oficina
+                  </a>
+                </div>
+                <div class="video-view" style="margin-top: 18px;">2K vistas<span
+                    class="seperate video-seperate"></span>hace 19 horas</div>
+              </div>
+              <div class="video anim" style="--delay: .5s">
+                <div class="video-time">32 min</div>
+                <div class="video-wrapper">
+                  <a href="https://www.youtube.com/watch?v=i0WPj_FfuIc">
+                    <video muted>
+                      <source src="assets/img/grupos.mp4" type="video/mp4">
+                    </video>
+                  </a>
+                </div>
+                <div class="video-by offline">Sydney Bradley, Business Insider</div>
+                <div class="video-name">
+                  <a class="vide-title-a"
+                    href="https://www.businessinsider.es/crea-grupo-facebook-convierte-trabajo-afiliados-1258172"
+                    style="color: inherit;">
+                    Creó un grupo de Facebook y ha ganado más de 200.000 euros
+                    con enlaces de afiliados en lo que va de año
+                  </a>
+                </div>
+                <div class="video-view" style="margin-top: 18px;">1K vistas<span
+                    class="seperate video-seperate"></span>hace 20 horas</div>
+              </div>
+              <div class="video anim" style="--delay: .6s">
+                <div class="video-time">7 min</div>
+                <div class="video-wrapper">
+                  <a href="https://www.youtube.com/watch?v=EbnGEGUIUTs">
+                    <video muted>
+                      <source src="assets/img/limites.mp4" type="video/mp4">
+                    </video>
+                  </a>
+                </div>
+                <div class="video-by offline">Jyoti Mann, Business Insider</div>
+                <div class="video-name">
+                  <a class="vide-title-a"
+                    href="https://www.businessinsider.es/como-decir-no-profesionalmente-establecer-limites-trabajo-1262580"
+                    style="color: inherit;">
+                    Cómo decir "no" de forma profesional y establecer límites en
+                    el trabajo
+                  </a>
+                </div>
+                <div class="video-view" style="margin-top: 18px;">2K vistas<span
+                    class="seperate video-seperate"></span>hace 1 día</div>
+              </div>
+              <div class="video anim" style="--delay: .7s">
+                <div class="video-time">7 min</div>
+                <div class="video-wrapper">
+                  <a href="https://www.youtube.com/watch?v=gDCQNPjG7-E">
+                    <video muted>
+                      <source src="assets/img/test.mp4" type="video/mp4">
+                    </video>
+                  </a>
+                </div>
+                <div class="video-by">Jim Edwards,Kenneth Niemeyer, Business
+                  Insider</div>
+                <div class="video-name">
+                  <a class="vide-title-a"
+                    href="https://www.businessinsider.es/responde-test-saber-alguien-psicopata-1259708"
+                    style="color: inherit;">
+                    El test de 20 preguntas para saber si alguien es un
+                    psicópata
+                  </a>
+                </div>
+                <div class="video-view">4K vistas<span
+                    class="seperate video-seperate"></span>hace 1 día</div>
+              </div>
+            </div>
           </div>
-          <!--  -->
-          <div class="small-header anim" style="--delay: .3s" id="politica">Política</div>
-          <div class="videos">
-            <div class="video anim" style="--delay: .4s">
-             <div class="video-time">21 min</div>
-             <div class="video-wrapper">        
-               <a href="https://www.youtube.com/watch?v=RuvUuJP-zO8">
-                 <video muted="">  
-                 <source src="assets/img/guerra IA.mp4" type="video/mp4">
-               </video>
-               </a>
-             </div>
-             <div class="video-by">Alberto R. Aguiar</div>
-             <div class="video-name">
-               <a class="vide-title-a" href="https://www.businessinsider.es/como-ia-generativa-sera-campo-batalla-eeuu-china-1265174" style="color: inherit;">
-                Cómo la IA generativa será otro campo de batalla entre EEUU y China: "No nos interesa ofrecerles tecnología que puedan usar en nuestra contra"
-               </a>
-             </div>           
-             <div class="video-view" style="margin-top: 18px;">3K vistas<span class="seperate video-seperate"></span>hace 1 día</div>
-            </div>
-            <div class="video anim" style="--delay: .5s">
-             <div class="video-time">1 min</div>
-             <div class="video-wrapper">
-               <a href="https://www.youtube.com/watch?v=IxEDSxsRRFw">
-                 <video muted="">
-                   <source src="assets/img/elecciones.mp4" type="video/mp4">
-                  </video>
-               </a>  
-             </div>
-             <div class="video-by offline">Miriam Pérez</div>
-             <div class="video-name">
-               <a class="vide-title-a" href="https://www.businessinsider.es/elecciones-23j-politicos-retirando-primera-linea-1260400" style="color: inherit;">
-                El adelanto electoral del 23J se ha cobrado varios protagonistas: las caras más visibles que dejan la primera línea política
-               </a>
-             </div>
-             <div class="video-view" style="margin-top: 18px;">1K vistas<span class="seperate video-seperate"></span>hace 23 horas</div>
-            </div>
-            <div class="video anim" style="--delay: .6s">
-             <div class="video-time">1 min</div>
-             <div class="video-wrapper">
-               <a href="https://www.youtube.com/watch?v=iCDU4RTVe9M">
-                 <video muted="">
-                   <source src="assets/img/votos.mp4" type="video/mp4">
-                  </video>
-               </a>       
-             </div>
-             <div class="video-by offline">Victoria Bustamante</div>
-             <div  class="video-name">
-               <a class="vide-title-a" href="https://www.businessinsider.es/pides-voto-correo-no-usas-no-podras-votar-presencial-1257620" style="color: inherit;">
-                ¿Puedes votar presencialmente si pides el voto por correo, pero no lo ejerces?
-               </a>
-               </div>
-             <div class="video-view" style="margin-top: 18px;">1K vistas<span class="seperate video-seperate"></span>hace 1 día</div>
-            </div>
-            <div class="video anim" style="--delay: .7s">
-             <div class="video-time">42 min</div>
-             <div class="video-wrapper">
-               <a href="https://www.youtube.com/watch?v=8lhab68BiP8">
-                 <video muted="">
-                   <source src="assets/img/formula.mp4" type="video/mp4">
-                  </video>
-               </a>           
-             </div>
-             <div class="video-by">Miriam Pérez</div>
-             <div class="video-name">
-               <a class="vide-title-a" href="https://www.businessinsider.es/plan-partido-espana-vaciada-conquistar-teletrabajo-1252706" style="color: inherit;">
-                La fórmula para revertir la despoblación se llama teletrabajo, pero hay desafíos: este es el plan del partido España Vaciada para conseguirlo
-               </a>
-               </div>
-             <div class="video-view" style="margin-top: 18px;">2K vistas<span class="seperate video-seperate"></span>hace 3 días</div>
-            </div>
-          </div>
-          <!--  -->
-          <div class="small-header anim" style="--delay: .3s" id="tecnologia">Tecnología</div>
-          <div class="videos">
-            <div class="video anim" style="--delay: .4s">
-             <div class="video-time">44 min</div>
-             <div class="video-wrapper">        
-               <a href="https://www.youtube.com/watch?v=N5DF9PsZFa4">
-                 <video muted="">  
-                 <source src="assets/img/ntf.mp4" type="video/mp4">
-               </video>
-               </a>
-             </div>
-             <div class="video-by">Óscar F. Civieta</div>
-             <div class="video-name">
-               <a class="vide-title-a" href="https://www.businessinsider.es/cual-nft-caro-historia-1261760" style="color: inherit;">
-                ¿Cuál es el NFT más caro de la historia?
-               </a>
-             </div>           
-             <div class="video-view" style="margin-top: 35px;">3K vistas<span class="seperate video-seperate"></span>hace 23 horas</div>
-            </div>
-            <div class="video anim" style="--delay: .5s">
-             <div class="video-time">4 min</div>
-             <div class="video-wrapper">
-               <a href="https://www.youtube.com/watch?v=e5W_2jolU5k">
-                 <video muted="">
-                   <source src="assets/img/titan.mp4" type="video/mp4">
-                  </video>
-               </a>  
-             </div>
-             <div class="video-by offline">Marianne Guenot, Insider</div>
-             <div class="video-name">
-               <a class="vide-title-a" href="https://www.businessinsider.es/5-errores-cometieron-submarino-titan-1265418" style="color: inherit;">
-                Hubo 5 errores clave antes de la implosión del submarino Titanic y la mayoría podrían haberse evitado fácilmente
-               </a>
-             </div>
-             <div class="video-view" style="margin-top: 35px;">1K vistas<span class="seperate video-seperate"></span>hace 12 horas</div>
-            </div>
-            <div class="video anim" style="--delay: .6s">
-             <div class="video-time">9 min</div>
-             <div class="video-wrapper">
-               <a href="https://www.youtube.com/watch?v=G6cXuKVOyS8">
-                 <video muted="">
-                   <source src="assets/img/ganar dinero.mp4" type="video/mp4">
-                  </video>
-               </a>       
-             </div>
-             <div class="video-by offline">Manuel Naranjo</div>
-             <div class="video-name">
-               <a class="vide-title-a" href="https://www.businessinsider.es/como-usar-inteligencia-artificial-ganar-dinero-youtube-1262014" style="color: inherit;">
-                7 formas de aprovechar el poder de la IA para ganar dinero en YouTube
-               </a>
-               </div>
-             <div class="video-view" style="margin-top: 35px;">2K vistas<span class="seperate video-seperate"></span>hace 1 día</div>
-            </div>
-            <div class="video anim" style="--delay: .7s">
-             <div class="video-time">12 min</div>
-             <div class="video-wrapper">
-               <a href="https://www.youtube.com/watch?v=LdLGUdXlMCo">
-                 <video muted="">
-                   <source src="assets/img/activision.mp4" type="video/mp4">
-                  </video>
-               </a>           
-             </div>
-             <div class="video-by">Carlos Ferrer-Bonsoms Cruz</div>
-             <div class="video-name">
-               <a class="vide-title-a" href="https://www.businessinsider.es/microsoft-planteo-adquirir-zynga-antes-comprar-activision-1265426" style="color: inherit;">
-                Microsoft se planteó adquirir Zynga antes de comprar Activision Blizzard
-               </a>
-               </div>
-             <div class="video-view" style="margin-top: 18px;">4K vistas<span class="seperate video-seperate"></span>hace 1 día</div>
-            </div>
-          </div>
-          <!--  -->
-          <div class="small-header anim" style="--delay: .3s" id="estrategia">Estrategia</div>
-          <div class="videos">
-            <div class="video anim" style="--delay: .4s">
-             <div class="video-time">10 min</div>
-             <div class="video-wrapper">        
-               <a href="https://www.youtube.com/watch?v=_5h7Y2ZjLFQ">
-                 <video muted="">  
-                 <source src="assets/img/Zvsmillenials.mp4" type="video/mp4">
-               </video>
-               </a>
-             </div>
-             <div class="video-by">Sawdah Bhaimiya, Business Insider</div>
-             <div class="video-name">
-               <a class="vide-title-a" href="https://www.businessinsider.es/zetas-millennials-sienten-excluidos-jerga-laboral-1260374" style="color: inherit;">
-                La generación Z y los 'millennials' se sienten confundidos, irritados y excluidos por la interminable jerga laboral de la oficina
-               </a>
-             </div>           
-             <div class="video-view" style="margin-top: 18px;">2K vistas<span class="seperate video-seperate"></span>hace 19 horas</div>
-            </div>
-            <div class="video anim" style="--delay: .5s">
-             <div class="video-time">32 min</div>
-             <div class="video-wrapper">
-               <a href="https://www.youtube.com/watch?v=i0WPj_FfuIc">
-                 <video muted="">
-                   <source src="assets/img/grupos.mp4" type="video/mp4">
-                  </video>
-               </a>  
-             </div>
-             <div class="video-by offline">Sydney Bradley, Business Insider</div>
-             <div class="video-name">
-               <a class="vide-title-a" href="https://www.businessinsider.es/crea-grupo-facebook-convierte-trabajo-afiliados-1258172" style="color: inherit;">
-                Creó un grupo de Facebook y ha ganado más de 200.000 euros con enlaces de afiliados en lo que va de año
-               </a>
-             </div>
-             <div class="video-view" style="margin-top: 18px;">1K vistas<span class="seperate video-seperate"></span>hace 20 horas</div>
-            </div>
-            <div class="video anim" style="--delay: .6s">
-             <div class="video-time">7 min</div>
-             <div class="video-wrapper">
-               <a href="https://www.youtube.com/watch?v=EbnGEGUIUTs">
-                 <video muted="">
-                   <source src="assets/img/limites.mp4" type="video/mp4">
-                  </video>
-               </a>       
-             </div>
-             <div class="video-by offline">Jyoti Mann, Business Insider</div>
-             <div class="video-name">
-               <a class="vide-title-a" href="https://www.businessinsider.es/como-decir-no-profesionalmente-establecer-limites-trabajo-1262580" style="color: inherit;">
-                Cómo decir "no" de forma profesional y establecer límites en el trabajo
-               </a>
-               </div>
-             <div class="video-view" style="margin-top: 18px;">2K vistas<span class="seperate video-seperate"></span>hace 1 día</div>
-            </div>
-            <div class="video anim" style="--delay: .7s">
-             <div class="video-time">7 min</div>
-             <div class="video-wrapper">
-               <a href="https://www.youtube.com/watch?v=gDCQNPjG7-E">
-                 <video muted="">
-                   <source src="assets/img/test.mp4" type="video/mp4">
-                  </video>
-               </a>           
-             </div>
-             <div class="video-by">Jim Edwards,Kenneth Niemeyer, Business Insider</div>
-             <div class="video-name">
-               <a class="vide-title-a" href="https://www.businessinsider.es/responde-test-saber-alguien-psicopata-1259708" style="color: inherit;">
-                El test de 20 preguntas para saber si alguien es un psicópata
-               </a>
-               </div>
-             <div class="video-view">4K vistas<span class="seperate video-seperate"></span>hace 1 día</div>
-            </div>
-          </div>
-         </div>
-         
-        <!--inicio de una caterogia-->       
-        <!--fin de una caterogia-->
+
+          <!--inicio de una caterogia-->
+          <!--fin de una caterogia-->
         </div>
-       </div>
-</body>
-</html>
+      </div>
+    </body>
+  </html>
