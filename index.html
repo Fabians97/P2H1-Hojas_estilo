@@ -117,39 +117,71 @@
         </div>
       </div>
       <div class="wrapper">
-        <div class="header">
-          <div class="search-bar">
+        <div class="barra" style="margin-top: 35px; margin-left: 30px;">
+          <div class="navbar" style="display: flex; width: 100%; justify-content: space-between;">
+    
+            <div class="search-bar">
             <input type="text" placeholder="Buscar">
+            </div>
+    
+            <div class="user-settings" style="height: 60px; margin-top: 10px; margin-right: 50px;">
+              <div class="user-name">
+                <div class="dropdown">
+                  <li style="list-style-type: none;">
+                    <a style="text-decoration: none; color: #fff;"
+                    href="login-register.html?form=login" id="text-init">Inciar sesión </a>
+                    <a style="text-decoration: none; color: #fff;" 
+                    href id="text-account">Mi cuenta</a>
+                    <button class="dropbtn">
+                      <svg id="dropdown-icon" viewBox="0 0 492 492"
+                        fill="currentColor">
+                      </svg>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="login-register.html?form=login" id="login-a">Iniciar
+                        sesión</a>
+                      <a href id="cerrar-a">Cerrar sesión</a>
+                      <a href="ver-usuarios.html" id="ver-users-a">Panel usuarios</a>
+                    </div>
+                  </li>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+          
+          <!-- <div class="search-bar">
+            <input type="text" placeholder="Buscar" style="margin-top: -4%;">
           </div>
 
           <div class="user-settings">
             <div class="user-name">
-              </div class="dropdown">
               <div class="dropdown">
                 <li style="list-style-type: none;">
-                  <a style="text-decoration: none; color: #fff;"
-                    href="login-register.html?form=login" id="text-init">Inciar sesión</a>
-                  <a style="text-decoration: none; color: #fff;" href id="text-account">Mi cuenta</a>
+                  <a style="text-decoration: none; color: #fff; margin-top: 20%; margin-left: -40%;"
+                  href="login-register.html?form=login" id="text-init">Inciar sesión </a>
+                  <a style="text-decoration: none; color: #fff; margin-top: 20%; margin-left: -40%;" 
+                  href id="text-account">Mi cuenta</a>
                   <button class="dropbtn">
-                    <svg id="dropdown-icon" viewBox="0 0 492 492"
+                    <svg id="dropdown-icon" viewBox="0 0 100 100"
                       fill="currentColor">
                     </svg>
                   </button>
+                  <div class="dropdown-content">
+                    <a href="login-register.html?form=login" id="login-a">Iniciar
+                      sesión</a>
+                    <a href id="cerrar-a">Cerrar sesión</a>
+                    <a href="ver-usuarios.html" id="ver-users-a">Panel usuarios</a>
+                  </div>
                 </li>
-                <div class="dropdown-content">
-                  <a href="login-register.html?form=login" id="login-a">Iniciar
-                    sesión</a>
-                  <a href id="cerrar-a">Cerrar sesión</a>
-                  <a href="ver-usuarios.html" id="ver-users-a">Panel Usuarios</a>
-                </div>
               </div>
             </div>
-
-          </div>
+          </div> -->
           <div class="main-container">
             <div class="main-header anim" style="--delay: 0s" id="portada">En
               portada</div>
-            <!--  -->
+
             <div class="main-blogs">
               <div class="main-blog anim" style="--delay: .1s">
                 <div class="main-blog__content" style="display: flex;">
@@ -578,7 +610,7 @@
 
           <!--inicio de una caterogia-->
           <!--fin de una caterogia-->
-        </div>
+        
       </div>
     </body>
   </html>

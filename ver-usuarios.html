@@ -18,22 +18,35 @@
     <div class="container">
 
       <div class="header">
+        
         <div class="navbar" style="display: flex;">
-
           <span class="logo"></span>
-          <a class="logo-expand" href="index.html"><img
-              src="assets/img/logo-removebg-preview.png" alt
-              style="width: 100%;">
+          <a class="logo-expand" href="index.html"><img src="assets/img/logo-removebg-preview.png" alt 
+            style="width: 100%; margin-left: -15%;">
           </a>
-
           <div class="search-bar">
             <input type="text" placeholder="Buscar">
           </div>
-
           <div class="user-settings">
+            <div class="user-name">
+              <div class="dropdown">
+                <li style="list-style-type: none;">
+                  <a style="text-decoration: none; color: #fff;" href id="text-account">Mi cuenta</a>
+                  <button class="dropbtn">
+                    <svg id="dropdown-icon" viewBox="0 0 492 492"
+                      fill="currentColor">
+                    </svg>
+                  </button>
+                </li>
+                <div class="dropdown-content">
+                  <a href="login-register.html?form=login" id="cerrar-a">Cerrar sesión</a>
+                </div>
+              </div>
+            </div>
           </div>
-
         </div>
+        
+        
 
         <div class="main-container">
           <div style="margin-bottom: 20px;">
@@ -56,10 +69,8 @@
               </tbody>
             </table>
           </div>
-
         </div>
       </div>
     </div>
   </body>
-
 </html>

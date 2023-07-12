@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const response = JSON.parse(xhr.responseText);
             resolve(response);
             alert('Registro con éxito!');
+            window.location.href = "login-register.html?form=login";
           } else if (xhr.status === 400) {
             alert('Correo ya en uso.');
           } else {
